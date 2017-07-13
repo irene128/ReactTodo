@@ -30,6 +30,26 @@ module.exports = {
       //if show completed checkbox checked, then show completed items
       return !todo.completed || showCompleted;
     });
+
+    //filter by searchText
+    filteredTodos = filteredTodos.filter((todo) => {
+      var text = todo.text.toLowerCase();
+      return searchText.length === 0 || text.indexOf(searchText) > -1;
+    });
+
+    //sort todos with non-completed first
+    // sort a, b return -1 => a comes before b
+    // sort a, b return 1 => b comes before a
+    filteredTodos.sort((a, b) => {
+      if(a.completed === false && b.completed === true) {
+        return -1;
+      }else if(b.completed === false && a.completed === true) {
+        return 1;
+      }else{
+        return 0;
+      }
+    });
+
     return filteredTodos;
   }
 }
