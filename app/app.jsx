@@ -12,9 +12,11 @@ store.subscribe(() => {
   console.log('New state', store.getState());
 });
 
+/*
 store.dispatch(actions.addTodo('Walk the dog'));
 store.dispatch(actions.setSearchText('dog'));
 store.dispatch(actions.toggleShowCompleted());
+*/
 
 //css
 $(document).foundation();
