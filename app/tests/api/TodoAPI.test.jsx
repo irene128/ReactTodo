@@ -10,7 +10,7 @@ describe('TodoAPI', () => {
   it('should exist', () => {
     expect(TodoAPI).toExist();
   });
-
+/*
   describe('setTodos', () => {
     it('should set valid todos array', () => {
       var todos = [{
@@ -52,7 +52,7 @@ describe('TodoAPI', () => {
       expect(actualTodos).toEqual(todos);
     });
   });
-
+*/
   describe('filterTodos', () => {
     var todos = [{
       id: 1,

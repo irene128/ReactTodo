@@ -1,6 +1,7 @@
 var $ = require('jquery');
 
 module.exports = {
+  /*
   setTodos: function (todos) {
     if($.isArray(todos)){
       //localStorage only can set value of string type
@@ -20,6 +21,7 @@ module.exports = {
 
     return $.isArray(todos) ? todos : [];
   },
+  */
   filterTodos: function (todos, showCompleted, searchText) {
     var filteredTodos = todos;
 

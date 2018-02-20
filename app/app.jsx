@@ -11,6 +11,7 @@ var TodoAPI = require('TodoAPI');
 
 //import './../playground/firebase/index';
 
+/*
 store.subscribe(() => {
   var state = store.getState();
   console.log('New state', state);
@@ -19,12 +20,15 @@ store.subscribe(() => {
 
 var initialTodos = TodoAPI.getTodos();
 store.dispatch(actions.addTodos(initialTodos));
+*/
 
 /*
 store.dispatch(actions.addTodo('Walk the dog'));
 store.dispatch(actions.setSearchText('dog'));
 store.dispatch(actions.toggleShowCompleted());
 */
+
+store.dispatch(actions.startAddTodos());
 
 //css
 $(document).foundation();
