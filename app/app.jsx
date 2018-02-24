@@ -14,6 +14,7 @@ import router from 'app/router/';
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     store.dispatch(actions.login(user.uid));
+    store.dispatch(actions.startAddTodos()); //dispatch just users' todo
     hashHistory.push('/todos');
   } else {
     store.dispatch(actions.logout());
@@ -38,7 +39,7 @@ store.dispatch(actions.setSearchText('dog'));
 store.dispatch(actions.toggleShowCompleted());
 */
 
-store.dispatch(actions.startAddTodos());
+
 
 //css
 $(document).foundation();
