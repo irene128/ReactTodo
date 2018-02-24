@@ -53,11 +53,12 @@ export var addTodos = (todos) => {
 export var startAddTodos = () => {
   return (dispatch, getState) => {
     var uid = getState().auth.uid;
-    var todosRef = firebaseRef.child(`users\${uid}\todos`);
+    var todosRef = firebaseRef.child(`users/${uid}/todos`);
 
     return todosRef.once('value').then((snapshot) => {
       var todos = snapshot.val() || {};
       var parsedTodos = [];
+
       /*
       convert
       {
@@ -72,6 +73,7 @@ export var startAddTodos = () => {
         text: 'test'
       }]
       */
+
       Object.keys(todos).forEach((todoId) => {
         parsedTodos.push({
           id: todoId,

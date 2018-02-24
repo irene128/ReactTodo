@@ -14,8 +14,9 @@ import router from 'app/router/';
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     store.dispatch(actions.login(user.uid));
-    store.dispatch(actions.startAddTodos()); //dispatch just users' todo
     hashHistory.push('/todos');
+    store.dispatch(actions.startAddTodos()); //dispatch just users' todo
+
   } else {
     store.dispatch(actions.logout());
     hashHistory.push('/');
