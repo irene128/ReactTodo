@@ -1,6 +1,7 @@
 var React = require('react');
 var {connect} = require('react-redux');
 var actions = require('actions');
+import PlusIcon from 'react-icons/lib/fa/plus-circle';
 
 export var AddTodo = React.createClass({
   handleSubmit: function (e) {
@@ -21,7 +22,7 @@ export var AddTodo = React.createClass({
     <div className="container__footer">
       <form onSubmit={this.handleSubmit}>
         <input type="text" ref="todoText" placeholder="what do you need todo?"/>
-        <button className="button expanded">Add Todo</button>
+        <button className="button expanded">Add Todo <PlusIcon /></button>
       </form>
     </div>
     );

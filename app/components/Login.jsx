@@ -2,6 +2,7 @@ import React from 'react';
 import * as Redux from 'react-redux';
 
 import * as actions from 'actions';
+import GitHubIcon from 'react-icons/lib/fa/github';
 
 export var Login = React.createClass({
   onLogin() {
@@ -20,7 +21,14 @@ export var Login = React.createClass({
               <p>
                 Login with GitHub account below.
               </p>
-              <button className="button" onClick={this.onLogin}>Login With GitHub</button>
+              <button className="button" onClick={this.onLogin}>Login With GitHub <GitHubIcon /> </button>
+            </div>
+            <div className="callout">
+              <h6><strong>About this App</strong></h6>
+              <p>
+                This app using React Redux framework, and Fundation responsive front-end framework.  Additionally, using Firebase cloud-hosted database.
+              </p>
+              <p><code>React</code> <code>Redux</code> <code>Fundation</code> <code>Firebase</code></p>
             </div>
           </div>
         </div>
