@@ -13,9 +13,9 @@
 
 
 ## Demo
-React Todo App [Link](https://warm-badlands-15217.herokuapp.com)
-Note: Heroku’s free tier **forces the app to go to sleep** if there’s no traffic hitting it after awhile
-部署在Heroku，久未開啟需要喚醒時間
++ React Todo App [Link](https://warm-badlands-15217.herokuapp.com)
++ Heroku’s free tier **forces the app to go to sleep** if there’s no traffic hitting it after awhile
++ 部署在Heroku，久未開啟需要喚醒時間
 
 
 ## 檢視
