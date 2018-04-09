@@ -11,9 +11,18 @@
 + Google Firebase
 + Heroku
 
+
+## Demo
+React Todo App [Link](https://warm-badlands-15217.herokuapp.com)
+Note: Heroku’s free tier **forces the app to go to sleep** if there’s no traffic hitting it after awhile
+部署在Heroku，久未開啟需要喚醒時間
+
+
 ## 檢視
 + 登入畫面
 <img src="images/login.png" alt="Login">
++ GitHub登入視窗
+<img src="images/login_window.png" alt="Login window">
 + 主畫面
 <img src="images/main.png" alt="Main">
 + 新增Todo項目
@@ -22,6 +31,3 @@
 <img src="images/toggle.png" alt="Toggle">
 + 關鍵字搜尋Todo項目
 <img src="images/search.png" alt="Search">
-
-## Demo
-React Todo App [Link](https://warm-badlands-15217.herokuapp.com)
